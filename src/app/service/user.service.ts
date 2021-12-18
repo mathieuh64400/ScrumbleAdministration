@@ -7,7 +7,7 @@ import { User } from '../model/user';
   providedIn: 'root'
 })
 export class UserService {
-  private apiURL = "http://localhost:3051/api";
+  private apiURL = "https://mhedot-scrumble-api.herokuapp.com/api/";
   // private apiBaseUrl:'';
   selectedUser: User = {
     fullName: '',
