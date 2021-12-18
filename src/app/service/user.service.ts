@@ -7,7 +7,7 @@ import { User } from '../model/user';
   providedIn: 'root'
 })
 export class UserService {
-  private apiURL = "https://mhedot-scrumble-api.herokuapp.com/api/";
+  private apiURL = "https://mhedot-scrumble-api.herokuapp.com";
   // private apiBaseUrl:'';
   selectedUser: User = {
     fullName: '',
@@ -22,15 +22,15 @@ export class UserService {
   //HttpMethods
 
   postUser(user: User){
-    return this.http.post(this.apiURL+'/register',user,this.noAuthHeader);
+    return this.http.post(this.apiURL+'/api/register',user,this.noAuthHeader);
   }
 
   login(authCredentials:any) {
-    return this.http.post(this.apiURL + '/authenticate', authCredentials,this.noAuthHeader);
+    return this.http.post(this.apiURL + '/api/authenticate', authCredentials,this.noAuthHeader);
   }
 
   getUserProfile() {
-    return this.http.get(this.apiURL + '/userProfile');
+    return this.http.get(this.apiURL + '/api/userProfile');
   }
 
 
