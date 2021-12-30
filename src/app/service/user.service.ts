@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import { environment } from '../../environments/environment';
+import { environment } from '../../environments/environment.prod';
 import { User } from '../model/user';
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-  private apiURL = "https://mhedot-scrumble-api.herokuapp.com";
+
+  private apiURL = environment;
   // private apiBaseUrl:'';
   selectedUser: User = {
     fullName: '',

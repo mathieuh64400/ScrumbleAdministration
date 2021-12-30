@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiBaseUrl:'https://mhedot-scrumble-api.herokuapp.com/'
+  apiBaseUrl:'https://scrumbleprod.herokuapp.com/'
 };
