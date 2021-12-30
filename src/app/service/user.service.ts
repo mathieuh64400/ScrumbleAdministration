@@ -8,7 +8,7 @@ import { User } from '../model/user';
 })
 export class UserService {
 
-  private apiURL = "https://scrumbleprod.herokuapp.com/";
+  private apiURL = "https://scrumbleprod.herokuapp.com";
   // private apiBaseUrl:'';
   selectedUser: User = {
     fullName: '',
