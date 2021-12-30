@@ -16,7 +16,7 @@ import 'rxjs/add/operator/toPromise';
 export class DaylicarteService {
   selectedDaylicarte:any = {titre: '', contenu: '' };
   daylicarte:Daylicarte[]=[];
-  readonly apiURL='http://localhost:3051/api/dayli'
+  readonly apiURL='https://scrumbleprod.herokuapp.com/api/dayli'
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'

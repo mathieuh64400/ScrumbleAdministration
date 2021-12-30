@@ -10,7 +10,7 @@ import {Pbcarte} from '../model/pbcarte';
 })
 export class PbcarteService {
     
-  private apiURL = "http://localhost:3051/api/Pbcarte";
+  private apiURL = "https://scrumbleprod.herokuapp.com/api/Pbcarte";
      
   httpOptions = {
     headers: new HttpHeaders({

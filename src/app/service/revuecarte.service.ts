@@ -10,7 +10,7 @@ import {Revuecarte} from '../model/revuecarte';
 export class RevuecarteService {
 
     
-  private apiURL = "http://localhost:3051/api/revuecarte";
+  private apiURL = "https://scrumbleprod.herokuapp.com/api/revuecarte";
      
   httpOptions = {
     headers: new HttpHeaders({

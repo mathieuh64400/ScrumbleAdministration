@@ -9,7 +9,7 @@ import { Userstories1 } from '../model/userstories1';
   providedIn: 'root'
 })
 export class Userstories1Service {
-  private apiURL = "http://localhost:3051/api/paquet1";
+  private apiURL = "https://scrumbleprod.herokuapp.com/api/paquet1";
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'

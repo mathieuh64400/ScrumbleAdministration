@@ -9,7 +9,7 @@ import { Regles } from '../model/regles';
 })
 export class ReglesService {
 
-  private apiURL = "http://localhost:3051/api/regles";
+  private apiURL = "https://scrumbleprod.herokuapp.com/api/regles";
      
   httpOptions = {
     headers: new HttpHeaders({

@@ -9,7 +9,7 @@ import {User} from '../model/user';
 })
 export class RoleService {
  
-  private apiURL = "http://localhost:3051/api/rolelist";
+  private apiURL = "https://scrumbleprod.herokuapp.com/api/rolelist";
      
   httpOptions = {
     headers: new HttpHeaders({
